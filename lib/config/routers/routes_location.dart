@@ -3,4 +3,5 @@ class RouteLocation {
   //routeLocation
   static String get splash => '/splash';
   static String get onFocus => '/onfocus';
+  static String get login => '/login';
 }

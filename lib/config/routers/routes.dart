@@ -1,8 +1,6 @@
 import 'package:go_router/go_router.dart';
-import 'package:onfocus/features/counter/onfocus_screen.dart';
-import 'package:onfocus/features/splash/splash_screen.dart';
-import 'routes_location.dart';
-import 'routes_provider.dart';
+import '../../features/features.dart';
+import '../config.dart';
 
 final routes = [
   GoRoute(
@@ -16,5 +14,11 @@ final routes = [
     parentNavigatorKey: navigationKey,
     // Todo: Edit here
     builder: (context, state) => const OnFocusScreen(),
+  ),
+  GoRoute(
+    path: RouteLocation.login,
+    parentNavigatorKey: navigationKey,
+    // Todo: Edit here
+    builder: (context, state) => const LoginScreen(),
   ),
 ];
